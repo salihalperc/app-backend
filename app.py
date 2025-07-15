@@ -12,7 +12,7 @@ SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_ADDRESS = os.getenv('EMAIL_USER')
 EMAIL_PASSWORD = os.getenv('EMAIL_PASS')
-
+EMAIL_ADRESSS = os.getenv('EMAIL_TO')
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
