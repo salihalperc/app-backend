@@ -28,7 +28,7 @@ def send_mail():
     # UTF-8 destekli MIME mesajı oluştur
     msg = MIMEMultipart()
     msg['From'] = EMAIL_ADDRESS
-    msg['To'] = EMAIL_ADDRESS
+    msg['To'] = EMAIL_ADDRESSS
     msg['Subject'] = subject
 
     msg.attach(MIMEText(body, 'plain', 'utf-8'))
