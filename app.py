@@ -12,7 +12,7 @@ SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_ADDRESS = os.getenv('EMAIL_USER')
 EMAIL_PASSWORD = os.getenv('EMAIL_PASS')
-EMAIL_ADRESSS = os.getenv('EMAIL_TO')
+EMAIL_ADRESS2 = os.getenv('EMAIL_TO')
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -28,7 +28,7 @@ def send_mail():
     # UTF-8 destekli MIME mesajı oluştur
     msg = MIMEMultipart()
     msg['From'] = EMAIL_ADDRESS
-    msg['To'] = EMAIL_ADDRESSS
+    msg['To'] = EMAIL_ADDRESS2
     msg['Subject'] = subject
 
     msg.attach(MIMEText(body, 'plain', 'utf-8'))
